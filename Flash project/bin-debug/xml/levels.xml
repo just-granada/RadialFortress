@@ -1,0 +1,339 @@
+<levels>
+	<level id="0" minRadius="100" maxRadius="500">
+		<belt numPieces="12" angularVelocity="0.01" type="belt">
+			<cannon index="0"/>
+			<cannon index="4"/>
+			<cannon index="8"/>
+			<metal index="2"/>
+			<metal index="6"/>
+			<metal index="10"/>
+		</belt>
+		<belt numPieces="12" angularVelocity="-0.01" type="belt">
+		</belt>
+		<belt numPieces="24" angularVelocity="-0.01" type="wall">
+			<metal index="4"/>
+			<metal index="12"/>
+			<metal index="20"/>
+		</belt>
+		<belt numPieces="24" angularVelocity="-0.01" type="wall">
+			<metal index="4"/>
+			<metal index="12"/>
+			<metal index="20"/>
+		</belt>
+		<belt numPieces="24" angularVelocity="-0.01" type="wall">
+			<metal index="4"/>
+			<metal index="12"/>
+			<metal index="20"/>
+		</belt>
+		<belt numPieces="24" angularVelocity="-0.01" type="wall">
+			<metal index="4"/>
+			<metal index="12"/>
+			<metal index="20"/>
+		</belt>
+		<belt numPieces="24" angularVelocity="-0.01" type="wall">
+			<metal index="4"/>
+			<metal index="12"/>
+			<metal index="20"/>
+		</belt>
+		<belt numPieces="24" angularVelocity="-0.01" type="wall">
+			<metal index="4"/>
+			<metal index="12"/>
+			<metal index="20"/>
+		</belt>
+		<belt numPieces="24" angularVelocity="-0.01" type="belt">
+			<metal index="7"/>
+			<metal index="8"/>
+			<metal index="9"/>
+			<metal index="15"/>
+			<metal index="16"/>
+			<metal index="17"/>
+			<metal index="23"/>
+			<metal index="0"/>
+			<metal index="1"/>
+		</belt>
+	</level>
+	<level id="1" minRadius="80" maxRadius="600">
+		<belt numPieces="10" angularVelocity="0.02" type="belt">
+			<metal index="0"/>
+			<metal index="1"/>
+			<metal index="2"/>
+			<metal index="3"/>
+			<metal index="4"/>
+		</belt>
+		<belt numPieces="20" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="9"/>
+		</belt>
+		<belt numPieces="20" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="9"/>
+		</belt>
+		
+		<belt numPieces="22" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="10"/>
+		</belt>
+		
+		<belt numPieces="22" angularVelocity="-0.02" type="belt">
+			<metal index="0"/>
+			<metal index="1"/>
+			<metal index="9"/>
+			<metal index="10"/>
+			<metal index="11"/>
+			<metal index="21"/>
+		</belt>
+		
+		<belt numPieces="24" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="11"/>
+		</belt>
+		
+		<belt numPieces="24" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="11"/>
+		</belt>
+		
+		<belt numPieces="26" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="12"/>
+		</belt>
+		<belt numPieces="26" angularVelocity="-0.015" type="belt">
+			<metal index="0"/>
+			<metal index="1"/>
+			<metal index="2"/>
+			<metal index="3"/>
+			<metal index="10"/>
+			<metal index="11"/>
+			<metal index="12"/>
+			<metal index="13"/>
+			<metal index="20"/>
+			<metal index="21"/>
+			<metal index="22"/>
+			<metal index="23"/>
+		</belt>
+	</level>
+	<level id="2" minRadius="80" maxRadius="700">
+		<belt numPieces="10" angularVelocity="0.02" type="belt">
+			<metal index="0"/>
+			<metal index="1"/>
+			<metal index="2"/>
+			<metal index="3"/>
+			<metal index="4"/>
+		</belt>
+		<belt numPieces="12" angularVelocity="0.02" type="belt">
+			<cannon index="0"/>
+			<cannon index="2"/>
+			<cannon index="4"/>
+			<cannon index="6"/>
+			<cannon index="8"/>
+			<cannon index="10"/>
+		</belt>
+		<belt numPieces="20" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="9"/>
+		</belt>
+		<belt numPieces="20" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="9"/>
+		</belt>
+		
+		<belt numPieces="20" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="9"/>
+		</belt>
+		
+		<belt numPieces="22" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="10"/>
+		</belt>
+		
+		<belt numPieces="22" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="10"/>
+		</belt>
+		
+		<belt numPieces="22" angularVelocity="-0.02" type="belt">
+			<metal index="0"/>
+			<metal index="1"/>
+			<cannon index="2"/>
+			<cannon index="8"/>
+			<metal index="9"/>
+			<metal index="10"/>
+			<metal index="11"/>
+			<cannon index="12"/>
+			<cannon index="20"/>
+			<metal index="21"/>
+		</belt>
+		
+		<belt numPieces="24" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="11"/>
+		</belt>
+		
+		<belt numPieces="24" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="11"/>
+		</belt>
+		<belt numPieces="24" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="11"/>
+		</belt>
+		
+		<belt numPieces="26" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="12"/>
+		</belt>
+		<belt numPieces="26" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="12"/>
+		</belt>
+		<belt numPieces="26" angularVelocity="-0.018" type="belt">
+			<metal index="0"/>
+			<metal index="1"/>
+			<metal index="2"/>
+			<metal index="3"/>
+			<metal index="10"/>
+			<metal index="11"/>
+			<metal index="12"/>
+			<metal index="13"/>
+			<metal index="20"/>
+			<metal index="21"/>
+			<metal index="22"/>
+			<metal index="23"/>
+		</belt>
+	</level>
+		<level id="3" minRadius="80" maxRadius="800">
+		<belt numPieces="10" angularVelocity="0.02" type="belt">
+			<metal index="0"/>
+			<metal index="1"/>
+			<metal index="2"/>
+			<metal index="5"/>
+			<metal index="6"/>
+			<metal index="7"/>
+		</belt>
+		<belt numPieces="12" angularVelocity="-0.02" type="belt">
+			<cannon index="0"/>
+			<cannon index="2"/>
+			<cannon index="4"/>
+			<cannon index="6"/>
+			<cannon index="8"/>
+			<cannon index="10"/>
+		</belt>
+		<belt numPieces="20" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="9"/>
+		</belt>
+		<belt numPieces="20" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="9"/>
+		</belt>
+		
+		<belt numPieces="20" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="9"/>
+		</belt>
+		
+		<belt numPieces="22" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="10"/>
+		</belt>
+		
+		<belt numPieces="22" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="10"/>
+		</belt>
+		
+		<belt numPieces="22" angularVelocity="-0.02" type="belt">
+			<metal index="0"/>
+			<metal index="1"/>
+			<cannon index="2"/>
+			<cannon index="8"/>
+			<metal index="9"/>
+			<metal index="10"/>
+			<metal index="11"/>
+			<cannon index="12"/>
+			<cannon index="20"/>
+			<metal index="21"/>
+		</belt>
+		
+		<belt numPieces="24" angularVelocity="0.01" type="wall">
+			<metal index="0"/>
+			<metal index="11"/>
+		</belt>
+		
+		<belt numPieces="24" angularVelocity="0.01" type="wall">
+			<metal index="0"/>
+			<metal index="11"/>
+		</belt>
+		<belt numPieces="24" angularVelocity="0.01" type="wall">
+			<metal index="0"/>
+			<metal index="11"/>
+		</belt>
+		
+		<belt numPieces="26" angularVelocity="0.01" type="wall">
+			<metal index="0"/>
+			<metal index="12"/>
+		</belt>
+		<belt numPieces="26" angularVelocity="0.01" type="wall">
+			<metal index="0"/>
+			<metal index="12"/>
+		</belt>
+		<belt numPieces="26" angularVelocity="0.018" type="belt">
+			<metal index="0"/>
+			<metal index="1"/>
+			<metal index="2"/>
+			<metal index="3"/>
+			<metal index="10"/>
+			<metal index="11"/>
+			<metal index="12"/>
+			<metal index="13"/>
+			<metal index="20"/>
+			<metal index="21"/>
+			<metal index="22"/>
+			<metal index="23"/>
+		</belt>
+		<belt numPieces="28" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="13"/>
+		</belt>
+		
+		<belt numPieces="28" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="13"/>
+		</belt>
+		<belt numPieces="28" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="13"/>
+		</belt>
+		
+		<belt numPieces="30" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="14"/>
+		</belt>
+		<belt numPieces="30" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="14"/>
+		</belt>
+		<belt numPieces="30" angularVelocity="-0.01" type="wall">
+			<metal index="0"/>
+			<metal index="14"/>
+		</belt>
+		<belt numPieces="32" angularVelocity="-0.018" type="belt">
+			<metal index="0"/>
+			<metal index="1"/>
+			<metal index="2"/>
+			<metal index="3"/>
+			<metal index="4"/>
+			<metal index="10"/>
+			<metal index="11"/>
+			<metal index="12"/>
+			<metal index="13"/>
+			<metal index="14"/>
+			<metal index="20"/>
+			<metal index="21"/>
+			<metal index="22"/>
+			<metal index="23"/>
+			<metal index="24"/>
+		</belt>
+	</level>
+</levels>

@@ -52,6 +52,7 @@ package com.danta.radialFortress.components
 		private static var NORMAL:int=0;
 		private static var DEAD:int=1;
 		private static var instance:Ship;
+		public static const MAX_HEALTH:int=8;
 		
 		//------------------------------------------------------------------------------
 		//
@@ -78,7 +79,7 @@ package com.danta.radialFortress.components
 			shipAsset.y=-shipAsset.height/2;
 			shipAsset.cacheAsBitmap=true;
 			shipAsset.smoothing=true;
-			_currentEnergy=10;
+			_currentEnergy=MAX_HEALTH;
 			
 			shipCore=new Sprite;
 			shipCore.graphics.beginFill(0,0.1);

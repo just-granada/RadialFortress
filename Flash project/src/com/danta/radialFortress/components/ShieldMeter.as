@@ -45,7 +45,9 @@ package com.danta.radialFortress.components
 		
 		public function ShieldMeter()
 		{
-			super();
+			shieldLabel=new ShieldLabel();
+			piecesContainer = new Sprite();
+			createPieces();
 		}
 		
 		//------------------------------------------------------------------------------
@@ -53,6 +55,10 @@ package com.danta.radialFortress.components
 		//  Variables
 		//
 		//------------------------------------------------------------------------------
+		
+		private var shieldLabel:ShieldLabel;
+		private var piecesContainer:Sprite;
+		private var pieces:Array;
 		
 		//--------------------------------------
 		//  Public
@@ -85,9 +91,38 @@ package com.danta.radialFortress.components
 		//  Public
 		//--------------------------------------
 		
+		public function setHealth(health:int):void
+		{
+			for(var i:int=0; i<Ship.MAX_HEALTH;i++)
+			{
+				if(i<health)
+				{
+					pieces[i].visible=true;
+				}
+				else
+				{
+					pieces[i].visible=false;
+				}
+			}
+		}
+		
 		//--------------------------------------
 		//  Private
 		//--------------------------------------
+		
+		private function createPieces():void
+		{
+			pieces=[];
+			var piece:ShieldPiece;
+			for(var i:int=0; i<Ship.MAX_HEALTH;i++)
+			{
+				piece=new ShieldPiece();
+				piece.x=i*piece.width+2;
+				piece.y=-piece.height/2;
+				piecesContainer.addChild(piece);
+				pieces.push(piece);
+			}
+		}
 		
 		//------------------------------------------------------------------------------
 		//

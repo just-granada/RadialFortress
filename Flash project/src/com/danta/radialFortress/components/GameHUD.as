@@ -48,11 +48,22 @@ package com.danta.radialFortress.components
 		
 		public function GameHUD()
 		{
-			lbl_level=new TextField();
-			this.addChild(lbl_level);
-			lbl_level.text="Level: ";
-			lbl_level.x=-GameScreen.screenWidth/2;
-			lbl_level.y=-GameScreen.screenHeight/2;
+			shieldMeter=new ShieldMeter();
+			shieldMeter.x=-GameScreen.screenWidth/2+10;
+			shieldMeter.y=-GameScreen.screenHeight/2+10;
+			this.addChild(shieldMeter);
+			
+			scoreTicker=new ScoreHUD();
+			scoreTicker.x=GameScreen.screenWidth/2-150;
+			scoreTicker.y=-GameScreen.screenHeight/2+10;
+			this.addChild(scoreTicker);
+			
+			scoreTicker.txt_score.text="0000";
+				
+			levelTicker=new LevelTicker();
+			levelTicker.x=-levelTicker.width/2;
+			levelTicker.y=-GameScreen.screenHeight/2+10;
+			this.addChild(levelTicker);
 		}
 		
 		//------------------------------------------------------------------------------
@@ -70,8 +81,9 @@ package com.danta.radialFortress.components
 		//--------------------------------------
 		
 		private var lbl_level:TextField;
-		private var shieldLabel:ShieldLabel;
-		private var lbl_score:TextField;
+		public var shieldMeter:ShieldMeter;
+		public var scoreTicker:ScoreHUD;
+		public var levelTicker:LevelTicker;
 		
 		//------------------------------------------------------------------------------
 		//

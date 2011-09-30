@@ -214,7 +214,7 @@ package com.danta.radialFortress.components
 			{
 				this._currentEnergy--;
 				TweenMax.to(this,0.1,{yoyo:true, tint:0xffaa99, repeat:5});
-				dispatchEvent(new FortressEvent(FortressEvent.SHIP_HIT));
+				dispatchEvent(new FortressEvent(FortressEvent.SHIP_HIT,true));
 				lastHitTime=getTimer();
 				if(this._currentEnergy<=0)
 				{

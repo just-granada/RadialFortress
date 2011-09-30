@@ -46,7 +46,10 @@ package com.danta.radialFortress.components
 		public function ShieldMeter()
 		{
 			shieldLabel=new ShieldLabel();
+			this.addChild(shieldLabel);
 			piecesContainer = new Sprite();
+			piecesContainer.x = shieldLabel.width+10;
+			this.addChild(piecesContainer);
 			createPieces();
 		}
 		
@@ -117,8 +120,8 @@ package com.danta.radialFortress.components
 			for(var i:int=0; i<Ship.MAX_HEALTH;i++)
 			{
 				piece=new ShieldPiece();
-				piece.x=i*piece.width+2;
-				piece.y=-piece.height/2;
+				piece.x=i*(piece.width-5);
+				piece.y=5;
 				piecesContainer.addChild(piece);
 				pieces.push(piece);
 			}

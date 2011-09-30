@@ -68,6 +68,7 @@ package com.danta.radialFortress.screens
 			this.addEventListener(Event.ENTER_FRAME, onEnterFrame);
 			gameWorldContainer.addEventListener(FortressEvent.SHIP_DESTROYED, onShipDestroyed);
 			gameWorldContainer.addEventListener(FortressEvent.CORE_DESTROYED, onCoreDestroyed);
+			gameWorldContainer.addEventListener(FortressEvent.SHIP_HIT, onShipHit);
 			createHUD();
 		}
 		
@@ -147,7 +148,10 @@ package com.danta.radialFortress.screens
 		private function createHUD():void
 		{
 			gameHUD = new GameHUD();
+			gameHUD.x=GameScreen.screenWidth/2;
+			gameHUD.y=GameScreen.screenHeight/2;
 			this.addChild(gameHUD);
+			gameHUD.levelTicker.txt_level.text="01";
 		}
 		
 		//------------------------------------------------------------------------------
@@ -165,6 +169,11 @@ package com.danta.radialFortress.screens
 			background.draw();
 			repositionViewport();
 			lastFrameTime=getTimer();
+		}
+		
+		private function onShipHit(event:Event):void
+		{
+			gameHUD.shieldMeter.setHealth(gameWorldContainer.ship.currentEnergy);
 		}
 		
 		private function onShipDestroyed(event:FortressEvent):void
@@ -188,6 +197,8 @@ package com.danta.radialFortress.screens
 		private function onNextLevel(event:FortressEvent):void
 		{
 			currentLevel++;
+			gameHUD.shieldMeter.setHealth(8);
+			gameHUD.levelTicker.txt_level.text=currentLevel>8?""+(currentLevel+1):"0"+(currentLevel+1);
 			gameWorldContainer.loadLevel(currentLevel);
 			this.removeChild(levelBeat);
 			levelBeat.removeEventListener(FortressEvent.NEXT_LEVEL, onNextLevel);
@@ -196,7 +207,9 @@ package com.danta.radialFortress.screens
 		
 		private function onTryAgain(event:Event):void
 		{
-			currentLevel=0; 
+			currentLevel=0;
+			gameHUD.levelTicker.txt_level.text=currentLevel>8?""+(currentLevel+1):"0"+(currentLevel+1);
+			gameHUD.shieldMeter.setHealth(8);
 			gameWorldContainer.loadLevel(currentLevel);
 			this.removeChild(gameOver);
 			gameOver.removeEventListener(FortressEvent.TRY_AGAIN, onTryAgain);

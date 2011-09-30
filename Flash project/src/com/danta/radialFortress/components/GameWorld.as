@@ -76,7 +76,7 @@ package com.danta.radialFortress.components
 		private var lastFrameTime:uint;
 		private var deltaT:uint;
 		private var i:int;
-		private var ship:Ship;
+		public var ship:Ship;
 		private var aux_shipBullet:ShipBullet;
 		private var aux_cannonBullet:EnemyBullet;
 		private var shipBullets:Array=[];

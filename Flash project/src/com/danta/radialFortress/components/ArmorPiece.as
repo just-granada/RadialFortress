@@ -221,7 +221,7 @@ package com.danta.radialFortress.components
 		
 		public function collidesWithShip(ship:Ship):Boolean
 		{
-			if(Math.abs(ship.angularPosition-this.globalAngularPosition) < (6*angularWidth/8) && Math.abs(ship.radialDistance-this.radius)<(this.radialDepth))
+			if(this.currentState==NORMAL && Math.abs(ship.angularPosition-this.globalAngularPosition) < (6*angularWidth/8) && Math.abs(ship.radialDistance-this.radius)<(this.radialDepth))
 			{
 				return true;
 			}

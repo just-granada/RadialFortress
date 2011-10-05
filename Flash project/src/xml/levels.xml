@@ -113,7 +113,7 @@
 		</belt>
 	</level>
 	<level id="2" minRadius="80" maxRadius="700">
-		<belt numPieces="10" angularVelocity="0.02" type="belt">
+		<belt numPieces="10" angularVelocity="-0.03" type="belt">
 			<metal index="0"/>
 			<metal index="1"/>
 			<metal index="2"/>

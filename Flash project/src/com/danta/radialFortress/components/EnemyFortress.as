@@ -137,16 +137,28 @@ package com.danta.radialFortress.components
 		
 		public function collidesWithShip(ship:Ship):Boolean
 		{
-			aux_beltIndex=Math.min(Math.round((ship.radialDistance-getMinRadius())/beltRadialDepth),belts.length-1);
+			/*aux_beltIndex=Math.min(Math.round((ship.radialDistance-getMinRadius())/beltRadialDepth)+1,belts.length-1);
 			if(aux_beltIndex>=0)
 			{
-				return belts[aux_beltIndex].collidesWithShip(ship);
+				if(belts[aux_beltIndex].collidesWithShip(ship))
+					return true;
 			}
-			else
+			if(aux_beltIndex-1>0)
+			{
+				return belts[aux_beltIndex-1].collidesWithShip(ship);
+			}*/
+			
+			for(i=0;i<belts.length;i++)
+			{
+				if(belts[i].collidesWithShip(ship))
+					return true;
+			}
+			if(ship.radialDistance<getMinRadius())
 			{
 				ship.takehit(0,ship.radialDistance);
 				return true;
 			}
+			return false;
 		}
 		
 		public function goBoom():void

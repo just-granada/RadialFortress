@@ -8,10 +8,12 @@
 package com.danta.radialFortress.components
 {
 	import com.danta.radialFortress.FortressEvent;
+	import com.danta.radialfortress.lib.Beam;
 	import com.danta.util.ArcHelper;
 	
 	import flash.display.BlendMode;
 	import flash.display.Sprite;
+	import flash.filters.GlowFilter;
 	
 	
 	/**
@@ -146,9 +148,8 @@ package com.danta.radialFortress.components
 		
 		private function createBody():void
 		{
-			graphics.lineStyle(5,0xffaaaa,0.4);
-			graphics.beginFill(0xffaaaa,0.8);
-			graphics.drawRoundRect(-5,0,5,24,4,4);
+			this.addChild(new Beam());
+			this.filters=[new GlowFilter(0xff0000,1,3,8,4)];
 		}
 		
 		//------------------------------------------------------------------------------

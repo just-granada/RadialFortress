@@ -8,6 +8,7 @@
 package com.danta.radialFortress.components
 {
 	import com.danta.radialFortress.screens.GameScreen;
+	import com.danta.radialfortress.lib.LevelTicker;
 	
 	import flash.display.Sprite;
 	import flash.text.TextField;
